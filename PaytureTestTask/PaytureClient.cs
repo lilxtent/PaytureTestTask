@@ -4,7 +4,7 @@ using RestSharp;
 
 namespace PaytureTestTask;
 
-public class PaytureClient
+public class PaytureClient : IPaytureClient
 {
     private IRestClient _client;
     

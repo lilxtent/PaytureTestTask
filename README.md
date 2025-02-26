@@ -1,3 +1,7 @@
+# Консольное приложение для тестового задания Payture
+
+Точка входа - `Program.cs`
+
 ### Результат запуска Main
 ![image](https://github.com/user-attachments/assets/31417a5e-29dc-4f6f-9abc-19ead321ad56)
 

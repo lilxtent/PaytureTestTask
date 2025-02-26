@@ -20,12 +20,11 @@ public class PaytureClient : IPaytureClient
         _client = new RestClient(clientOptions);
     }
 
-    //Тут можно накидать оберток, чтобы передавать timeout как TimeSpan, или количество секунд int
     public async Task<RestResponse<PayResponse>> Pay(PayRequest request, TimeSpan? timeout = null)
     {
         var restRequest = new RestRequest("Pay");
 
-        //Overrides timeout from RestClientOptions
+        //Request timeout overrides timeout from RestClientOptions
         if (timeout.HasValue)
         {
             restRequest.Timeout = timeout.Value;
